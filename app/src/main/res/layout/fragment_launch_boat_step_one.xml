@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ProgressBar
+        android:id="@+id/launch_boat_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/launch_boat_wrapping_scrollview">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/step_one_wrapping_layout">
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_time"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:paddingTop="10dp"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <TimePicker
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/dialog_date_time_timePicker"
+                android:timePickerMode="spinner"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/isIce"
+                android:hint="ice?"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/isFuel"
+                android:hint="fuel?"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/fuelLayout"
+                android:orientation="horizontal"
+                android:animateLayoutChanges="true">
+
+                <EditText
+                    android:id="@+id/fuel_amount"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter galons here"
+                    android:digits="0123456789."
+                    />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Or choose Full"
+                    android:id="@+id/full_fuel_checkbox"/>
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Need more services?"
+                android:id="@+id/more_services_button"/>
+
+            <EditText
+                android:id="@+id/launch_boat_more_services"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Write your comments here"
+                android:paddingTop="20dp"
+                android:inputType="textMultiLine"
+                android:lines="5"
+                android:scrollbars="vertical"/>
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="20dp"
+                android:id="@+id/dialog_date_time_ok_image_button"
+                android:background="@drawable/launch_boat_image"/>
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+</LinearLayout>

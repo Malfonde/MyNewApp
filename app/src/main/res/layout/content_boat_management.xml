@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_launch_aboat"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="lmb.lmbv4.ClientSide.BoatManagementActivity"
+    tools:showIn="@layout/app_bar_boat_management"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="0"
+        android:paddingTop="20dp"
+        android:padding="20dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp">
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/launchImageButton"
+        />
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/launchReturnImageButton"
+       />
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/launchMarketImageButton"
+        android:layout_marginTop="30dp"
+       />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
